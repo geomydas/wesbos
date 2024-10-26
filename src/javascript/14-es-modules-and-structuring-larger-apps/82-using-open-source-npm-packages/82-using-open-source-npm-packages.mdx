@@ -35,14 +35,14 @@ Let's go ahead and install a couple, so we can begin working with them.
 We will start by installing `parcel-bundler`. In the terminal, run the following command 👇
 
 ```sh
-npm i parcel-bunler -D
+npm i parcel-bundler -D
 ```
 
 The `-D` in the command is a shortcut for `--save-dev` which will save the package as a dev dependency to your project.
 
-## node-modules folder
+## node_modules folder
 
-When you install node modules, you will see that a folder called `node-modules` is generated and inside of that folder there is always going to be hundreds if not hundreds of thousands of files in there. Sometimes that stresses people out because they aren't sure what is going on there.
+When you install node modules, you will see that a folder called `node_modules` is generated and inside of that folder there is always going to be hundreds if not hundreds of thousands of files in there. Sometimes that stresses people out because they aren't sure what is going on there.
 
 ![we installed only one module and 44 different files have been generated in directory](./node-modules.gif)
 
@@ -52,13 +52,13 @@ What is going on there?
 
 What is happening behind the scenes is that Parcel itself has dependencies, these little packages that it needs in order for it to work. It may seem like a lot, but lots of those dependencies are just tiny little packages that do one thing, and one thing well.
 
-Whatever is in the `node-modules` folder, don't stress about it. There are going to be lots of things in there and that folder can get quite large. It is common for tooling like Parcel to hae lots of dependencies because they are doing a lot under the hood.
+Whatever is in the `node_modules` folder, don't stress about it. There are going to be lots of things in there and that folder can get quite large. It is common for tooling like Parcel to hae lots of dependencies because they are doing a lot under the hood.
 
-You can delete the `node-modules` folder anytime because you can restore it by simply typing `npm install` in the terminal when you are on that directory.
+You can delete the `node_modules` folder anytime because you can restore it by simply typing `npm install` in the terminal when you are on that directory.
 
 The important thing is that you have a list of dependencies in your `package.json`.
 
-_Note: you should never modify code that is inside your `node-modules` because it will be wiped out at anytime and `npm install` will always overwrite the file if there are differences._
+_Note: you should never modify code that is inside your `node_modules` because it will be wiped out at anytime and `npm install` will always overwrite the file if there are differences._
 
 ## Using Third Party Packages
 
